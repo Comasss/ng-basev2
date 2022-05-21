@@ -6,7 +6,7 @@ Config.Colour = 345001
 TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
 RegisterNetEvent('announce:send', function(data)
-    SendLog("New annoucement", "Name: " .. GetPlayerName(source) .. "\nMessage: " .. data.msg)
+    SendLog("New annoucement", "Name: " .. GetPlayerName(source) .. "\nMessage: " .. data.msg .. "\nJob: " .. data.job)
     TriggerClientEvent('announce:sendForAll', -1, data)
 end)
 
