@@ -1,0 +1,56 @@
+@font-face {
+    font-family: Boxed;
+    src: url("https://cdn.discordapp.com/attachments/839958624340148314/977562570506510346/Gobold_Bold.ttf");
+}
+
+.container{
+    position: absolute;
+    left: 23.5%;
+    bottom: 6%;
+    transform: translateX(-50%);
+    width: 8vw;
+    height: 4vw;
+    background-color: black;
+    border-radius: 0.4vw;
+    border-left: 0.4vw solid #4061a8;
+    box-shadow: 0px 0px 5px black;
+}
+
+#velocidad{
+    position: absolute;
+    font-family: Boxed;
+    font-size: 2.3vw;
+    color:white;
+    text-shadow: 1px 2px 2px black;
+    left: 13%;
+    bottom: 14%;
+}
+
+#gasolina-icon{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 0.7vw;
+    text-shadow: 1px 2px 2px black;
+    left: 63%;
+    bottom: 48%;
+}
+
+#gasolina{
+    position: absolute;
+    font-family: Boxed;
+    font-size: 0.7vw;
+    color: white;
+    text-shadow: 1px 2px 1px black;
+    left: 74%;
+    bottom: 47%;
+}
+
+#km{
+    position: absolute;
+    font-family: Boxed;
+    font-size: 0.8vw;
+    color: white;
+    text-shadow: 1px 2px 1px black;
+    left: 63%;
+    bottom: 22%;
+}

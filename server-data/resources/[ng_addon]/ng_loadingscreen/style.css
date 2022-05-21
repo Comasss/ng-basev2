@@ -1,0 +1,13 @@
+video {
+    object-fit: cover;
+    width: 1920px;
+    height: 1080px;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}

@@ -1,0 +1,231 @@
+body {
+  background-color: rgba(0, 0, 0, 0.85);
+  font-family: "Asap", sans-serif;
+}
+
+.login {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.746), 0, 0);
+  padding: 40px 30px 30px 30px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: -webkit-transform 2000ms, box-shadow 2000ms;
+  -moz-transition: -moz-transform 2000ms, box-shadow 2000ms;
+  transition: transform 2000ms, box-shadow 2000ms;
+  box-shadow: 0 0 10px #000000;
+}
+.login::before, .login::after {
+  content: '';
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 35%;
+  border-bottom-right-radius: 40%;
+  z-index: -1;
+}
+.login::before {
+  left: 40%;
+  bottom: -130%;
+  background-color: #ff0052);
+  -webkit-animation: wawes 6s infinite linear;
+  -moz-animation: wawes 6s infinite linear;
+  animation: wawes 6s infinite linear;
+}
+.login::after {
+  left: 35%;
+  bottom: -125%;
+  background-color: #ff0052;
+  -webkit-animation: wawes 7s infinite;
+  -moz-animation: wawes 7s infinite;
+  animation: wawes 7s infinite;
+}
+.login > input {
+  font-family: "Asap", sans-serif;
+  display: block;
+  border-radius: 5px;
+  font-size: 16px;
+  background: white;
+  width: 100%;
+  border: 0;
+  padding: 10px 10px;
+  margin: 15px -10px;
+}
+.login > button {
+  font-family: "Asap", sans-serif;
+  cursor: pointer;
+  color: #fff;
+  text-shadow: 1px 1px black;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 110px;
+  border: 0;
+  padding: 10px 0;
+  margin-top: 10px;
+  margin-left: -5px;
+  border-radius: 5px;
+  background-color: #ff0052;
+  -webkit-transition: background-color 300ms;
+  -moz-transition: background-color 300ms;
+  transition: background-color 300ms;
+}
+.login > button:hover {
+  background-color: #000000;
+}
+
+@-webkit-keyframes wawes {
+  from {
+    -webkit-transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes wawes {
+  from {
+    -moz-transform: rotate(0);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@keyframes wawes {
+  from {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px black;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 12px;
+}
+.signup-form a:hover{
+  background: rgba(0,0,0,.3);
+}
+
+/*BUTTONS*/
+
+
+
+/* Variables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+:root {
+	--primary-c: black;
+	--secondary-c: #ffffff;
+	
+	--white: #FDFBFB;
+	
+	--text: #ffffff;	
+  text-shadow: 1px 1px black;
+	--bg: var(--primary-c);
+}
+
+
+/* Basic Config
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+html, body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+  display: none;
+  justify-content: center;
+  align-items: center;
+	font-family: 'Raleway', sans-serif;
+	color: var(--text);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 50px;
+	margin: 0;
+}
+
+li {
+	display: block;
+	position: relative;
+	padding: 20px 0px;
+}
+
+h2 {
+	margin: 10px 0;
+	font-weight: 900;
+}
+
+
+/* Card
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.card {
+	display: flex;
+	flex-direction: column;	
+	background: var(--white);
+	width: 300px;
+	padding: 20px 25px;
+	border-radius: 20px;
+	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.13);
+}
+
+
+/* Radio Button
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+input[type=radio] {
+	position: absolute;
+	visibility: hidden;
+}
+
+label { 
+	cursor: pointer; 
+	font-weight: 400;
+}
+
+.check {
+	width: 30px; height: 30px;
+	position: absolute;
+	border-radius: 50%;
+	transition: transform .6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+/* Reset */
+input#one ~ .check { 
+	transform: translate(-50px, -25px); 
+	background: var(--secondary-c); 
+}
+input#two ~ .check { 
+	transform: translate(-50px, -83px); 
+	background: var(--primary-c);
+	box-shadow: 0 0 18px #000000;
+}
+
+/* Radio Input #1 */
+input#one:checked ~ .check { transform: translate(-50px, 33px); }
+
+/* Radio Input #2  */
+input#two:checked ~ .check { transform: translate(-50px, -25px); }

@@ -1,0 +1,160 @@
+@font-face {
+    font-family: font;
+    src: url(./BoxedRound.ttf);
+}
+
+body {
+    margin-top: 20vh;  /*---[ CHANGING NOTIFY (Y) POSITION ]---*/
+    font-family: font;
+    overflow: hidden;
+}
+
+.notify {
+    width: 20px;
+    margin-left: 101vw;  /*---[ CHANGING NOTIFY (X) POSITION ]---*/
+}
+
+.wrapper {
+    width: 100px;
+    height: auto;
+    background-color: #000000c2;
+    float: right;
+}
+
+.main {
+    margin: 5px;
+    position: relative;
+}
+
+.main::before {
+    top: calc(50% - 13px); 
+    left: -50px;
+    position: absolute;
+    background: rgba(235, 6, 6, 0);
+    padding: 15px;
+    width: 0.75vw; 
+    height: 0.85vw;
+    font-size: 17px;
+    border-radius: 3px;
+    margin-left: -10px; 
+    margin-top: -10px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+/*---[ SUCCESS NOTIFY ]---*/
+
+
+.success {
+    background-color: rgba(0, 0, 0, 0.822);
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px black;
+    color: #fff;
+    padding: 3px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    font-weight: 10;
+    transform: perspective(400px) rotateY(-5deg);
+}
+
+/*---[ INFORMATION NOTIFY ]---*/
+
+.info-icon::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0f3";
+    color: #ffffff;
+}
+
+.info {
+    background: #191c1f;
+    box-shadow: 0 0 40px rgb(255,255,255,0.75);
+    color: #fff;
+    padding: 5px 5px 5px 5px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    font-weight: 300;
+   transform: perspective(400px) rotateY(-5deg);
+}
+
+
+/*---[ WARNING NOTIFY ]---*/
+
+.warning-icon::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0e0";
+    color: #ffc107;
+}
+
+.warning {
+    background: #191c1f;
+    box-shadow: 0 0 40px rgb(255, 193, 7, 1);
+    color: #fff;
+    padding: 5px 5px 5px 5px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    font-weight: 300;
+   transform: perspective(400px) rotateY(-5deg);
+}
+
+/*---[ ERROR NOTIFY ]---*/
+
+
+.error-icon::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00d";
+    color: #ff2121;
+}
+
+.error {
+    background: #191c1f;
+    box-shadow: 0 0 40px rgb(255, 33, 33, 1);
+    color: #fff;
+    padding: 5px 5px 5px 5px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    font-weight: 300;
+   transform: perspective(400px) rotateY(-5deg);
+}
+
+/*---[ NEW SMS NOTIFY ]---*/
+
+.sms-icon::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f4ba";
+    color: #01a2dc;
+}
+
+.sms {
+    background: rgb(25, 28, 31);
+    box-shadow: 0 0 40px rgb(1, 162, 220, 1);
+    color: #fff;
+    padding: 5px 5px 5px 5px;
+    word-spacing: 0.5px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    font-weight: 300;
+   transform: perspective(400px) rotateY(-5deg);
+}
+
+/*---[ LONG MESSAGE NOTIFY ]---*/
+
+.long-icon::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0c7";
+    color: #ffffff;
+}
+
+.long {
+    background: #191c1f;
+    box-shadow: 0 0 40px rgb(255,255,255,0.75);
+    color: #fff;
+    padding: 5px 5px 5px 5px;
+    word-spacing: 0.5px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    font-weight: 300;
+   transform: perspective(400px) rotateY(-5deg);
+}

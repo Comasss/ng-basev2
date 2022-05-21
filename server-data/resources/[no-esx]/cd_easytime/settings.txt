@@ -1,0 +1,1 @@
+{"hours":18,"blackout":false,"weather":"FOGGY","tsunami":false,"mins":8,"instantweather":true,"instanttime":true,"freeze":true,"dynamic":true}

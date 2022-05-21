@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Register UI</title>
+  <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+  <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Ubuntu:400,700&amp;display=swap'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  
+
+
+<form class="login" id="register">
+
+  <br>
+
+  <input id="firstname" type="text" placeholder="Nombre">
+  <input id="lastname" type="text" placeholder="Apellidos">
+  <input id="dateofbirth" type="date" placeholder="Fecha de nacimiento">
+  <input id="height" type="text" placeholder="Altura">
+
+
+    
+    <ul>
+      <li>
+        <input type="radio" name="sex" value="m" id="one" checked />
+        <label for="one">Hombre</label>
+        
+        <div class="check"></div>
+      </li>
+      
+      <li>
+        <input type="radio" name="sex" value="f" id="two" />
+        <label for="two">Mujer</label>
+        
+        <div class="check"></div>
+      </li>
+    </ul>
+
+    
+  <button id="submit" type="submit">Registrarse</button>
+</form>
+<script src="main.js"></script>
+</body>
+</html>
